@@ -4,9 +4,9 @@ from dash import html
 import plotly.express as px
 import pandas as pd
 
-server = app.server
-
 app = dash.Dash()
+
+server = app.server
 colors = {
     'background': '#111111',
     'text': '#7FDBFF'
