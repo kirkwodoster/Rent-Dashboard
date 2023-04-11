@@ -4,8 +4,7 @@ from dash import html
 import plotly.express as px
 import pandas as pd
 
-app = dash.Dash()
-
+app = Dash(__name__)
 server = app.server
 colors = {
     'background': '#111111',
@@ -42,5 +41,5 @@ app.layout = html.Div(style={'backgroundColor': colors['background']}, children=
 ])
  
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app.run_server(debug=True)
